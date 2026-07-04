@@ -3,13 +3,18 @@
 Desktop GUI for [Zero](https://github.com/pavanvzm/zero) - An AI Coding Agent that helps you code faster with intelligent assistance.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3.3-blue)
 ![React](https://img.shields.io/badge/React-18.2.0-61dafb)
 ![Electron](https://img.shields.io/badge/Electron-28.1.0-47848F)
 
+A powerful **Windows desktop application** for the Zero AI Coding Agent, built with Electron, React, and TypeScript. Provides an intuitive GUI for managing AI-powered coding sessions across multiple providers.
+
+> **Native Windows Support**: Built with Electron Builder with NSIS installer support for seamless Windows installation.
+
 ## Features
 
-- 🖥️ **Native Desktop Application** - Cross-platform desktop GUI built with Electron
+- 🖥️ **Windows Desktop Application** - Native Windows GUI built with Electron
 - 🎨 **Modern UI** - Clean, dark-themed interface built with React and Tailwind CSS
 - 🔌 **Multi-Provider Support** - Connect to various AI providers:
   - OpenAI
@@ -57,15 +62,16 @@ npm run electron:dev
 
 This will start both the Vite dev server and Electron simultaneously.
 
-### 4. Build for Production
+### 4. Build for Windows
 
-Build the application for your platform:
+Build the Windows installer (.exe with NSIS):
 
 ```bash
 npm run electron:build
 ```
 
-The built application will be available in the `release/` directory.
+The built application and Windows installer will be available in the `release/` directory as:
+- `Zero Desktop Setup x.x.x.exe` - NSIS installer for Windows
 
 ## Project Structure
 
@@ -155,13 +161,14 @@ You can set default actions for each permission type in Settings.
 
 ## Technology Stack
 
-- **Framework**: [Electron](https://www.electronjs.org/)
+- **Framework**: [Electron](https://www.electronjs.org/) - Cross-platform desktop app framework
 - **Frontend**: [React](https://react.dev/) with TypeScript
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/)
-- **Build Tool**: [Vite](https://vitejs.dev/)
-- **Code Editor**: [Monaco Editor](https://microsoft.github.io/monaco-editor/)
-- **Icons**: [Lucide React](https://lucide.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
+- **State Management**: [Zustand](https://zustand-demo.pmnd.rs/) - Lightweight state management
+- **Build Tool**: [Vite](https://vitejs.dev/) - Next generation frontend tooling
+- **Code Editor**: [Monaco Editor](https://microsoft.github.io/monaco-editor/) - The editor that powers VS Code
+- **Icons**: [Lucide React](https://lucide.dev/) - Beautiful & consistent icons
+- **Packaging**: [electron-builder](https://www.electron.build/) - With NSIS support for Windows installers
 
 ## Contributing
 
